@@ -94,8 +94,6 @@ p {
 
 #navigation h1 {
   text-align: center;
-  color: #fefefe;
-  text-shadow: 0 1px 1px #000;
 }
 
 #main {
@@ -154,11 +152,6 @@ p {
 .sidebar {
   padding: 1em;
   margin-top: 1em;
-  background-color: #CCC;
-  background: -moz-linear-gradient(center top , #FAFAFC, #EEE) repeat scroll 0 0 #333;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444454), to(#223));
-  border: 1px solid #AAA;
-  text-shadow: 0 1px 0 #CCC;
 }
 
 .sidebar ul li {
@@ -186,13 +179,37 @@ p {
 /*
  * colours
  */
+body {
+  background-color: #1D1E20;
+  background: -moz-linear-gradient(center bottom, #1D1E20, #222328) repeat scroll 0 0 #333;
+  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#1D1E20), to(#222328));
+}
+
 .bar {
   background-color: #333;
-  background: -moz-linear-gradient(center top , #444454, #223) repeat scroll 0 0 #333;
+  background: -moz-linear-gradient(center top, #444454, #223) repeat scroll 0 0 #333;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444454), to(#223));
   border-top: 1px solid #666776;
   border-bottom: 1px solid #000;
 }
+
+.silver, .sidebar, .dialog {
+  background-color: #EEE;
+  background: -moz-linear-gradient(center top , #FAFAFC, #EEE) repeat scroll 0 0 #EEE;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FAFAFC), to(#EEE));
+  border: 1px solid #AAA;
+  text-shadow: 0 1px 0 #CCC;
+}
+
+#navigation h1 {
+  color: #fefefe;
+  text-shadow: 0 1px 1px #000;
+}
+
+#main .colleft {
+  background-color: #333;
+}
+
 
 /* 
  * print styles
