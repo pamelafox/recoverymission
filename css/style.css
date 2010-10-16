@@ -149,9 +149,15 @@ p {
 }
 
 
-.sidebar {
+.sidebar,
+.sidebar article, 
+.sidebar aside {
   padding: 1em;
   margin-top: 1em;
+}
+
+.sidebar aside {
+  
 }
 
 .sidebar ul li {
@@ -224,14 +230,22 @@ body {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444454), to(#223));
   border-top: 1px solid #666776;
   border-bottom: 1px solid #000;
+  color: white;
+  text-shadow: 0 1px 0 #000;
 }
 
-.silver, .sidebar, .dialog {
+.silver, .panel, .dialog {
   background-color: #EEE;
   background: -moz-linear-gradient(center top , #FAFAFC, #EEE) repeat scroll 0 0 #EEE;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FAFAFC), to(#EEE));
   border: 1px solid #AAA;
   text-shadow: 0 1px 0 #CCC;
+}
+
+.info {
+  color: #EEE;
+  text-shadow: 0 1px 1px #000;
+  text-align: center;
 }
 
 #navigation h1 {
@@ -240,7 +254,7 @@ body {
 }
 
 #main .colleft {
-  background-color: #333;
+  background-color: #333135;
 }
 
 #main .colleft .sidebar {
