@@ -141,7 +141,8 @@ p {
 }
 
 .sidebar ul li:first-of-type {
-  border-top: 1px dotted #CCC;
+  border-top-style: dotted;
+  border-top-width: 1px;
 }
 
 article.dialog {
@@ -207,12 +208,30 @@ body {
   text-shadow: 0 1px 0 #000;
 }
 
-.silver, .panel, .dialog {
+.panel, .dialog {
   background-color: #EEE;
   background: -moz-linear-gradient(center top , #FAFAFC, #EEE) repeat scroll 0 0 #EEE;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FAFAFC), to(#EEE));
   border: 1px solid #AAA;
   text-shadow: 0 1px 0 #CCC;
+}
+
+.clues {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-bottom-color: rgba(250,250,250,0.1);
+  -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,0.25);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.25);
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0.25);
+  color: #eeeffe;
+  background-color: rgba(32,16,48,0.2);
+  text-shadow: 0 2px 0 rgba(0,0,0,0.65);
+}
+
+.clues ul li {
+  border-color: #223;
 }
 
 .info {
