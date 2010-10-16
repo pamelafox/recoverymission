@@ -80,6 +80,21 @@ html, body {
   height: 100%;
 }
 
+#navigation {
+  background: #666;
+  padding: 0.7em 0.2em 0.2em;
+}
+
+#navigation .colleft {
+  background-color: transparent;
+}
+
+#navigation h1 {
+  text-align: center;
+  color: #fefefe;
+  text-shadow: 0 1px 1px #000;
+}
+
 #main {
   position: relative;
   min-width: 600px;
