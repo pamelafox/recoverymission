@@ -1,0 +1,37 @@
+.game {
+    background: silver;
+    width: 600px;
+    height: 400px;
+    -webkit-border-radius: 12px;
+    margin: 20px 0 0 5px;
+}
+
+.choose-container {
+    overflow: hidden;
+    background: rgba(50, 50, 50, 0.6);
+    width: 580px;
+    height: 160px;
+    padding: 10px;
+    margin: 20px 0 0 5px;
+    -webkit-border-radius: 12px;
+    -webkit-box-shadow: 0 0 10px rgba(30, 30, 30, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    display: none;
+}
+
+.chooser {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 2000px;
+}
+
+.chooser li {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+#score {
+    font-size: 1.4em;
+    float: right;
+}
