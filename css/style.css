@@ -108,8 +108,13 @@ p {
 
 #main {
   position: relative;
-  min-width: 600px;
+  min-width: 800px;
   min-height: 100%;
+}
+
+#main .colleft .col1 {
+  height: 100%;
+  min-height: 500px;
 }
 
 #container footer {
