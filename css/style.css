@@ -81,8 +81,11 @@ html, body {
 }
 
 #navigation {
-  background: #666;
+  background-color: #333;
+  background: -moz-linear-gradient(center top , #444454, #223) repeat scroll 0 0 #333;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444454), to(#223));
   padding: 0.7em 0.2em 0.2em;
+  border-bottom: 1px solid #000;
 }
 
 #navigation .colleft {
