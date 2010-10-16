@@ -79,6 +79,11 @@ html, body {
   height: 100%;
 }
 
+body > header {
+  text-align: center;
+  padding: 0.4em;
+}
+
 h1 { font-size: 1.2em;}
 h2 { font-size: 1.1em;}
 
@@ -208,6 +213,11 @@ body {
   background-color: #001333;
   background: -moz-linear-gradient(center top, #001333, #0f2855) repeat scroll 0 0 #0f2855;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#001333), to(#0f2855));
+}
+
+body > header h1 {
+  color: white;
+  text-shadow: 0 2px 3px #000;
 }
 
 .bar {
