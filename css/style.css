@@ -133,12 +133,12 @@ p {
   right:75%;      /* right column width */
 }
 .leftmenu .col1 {
-  width:71%;      /* right column content width */
-  left:102%;      /* 100% plus left column left padding */
+  width:75%;      /* right column content width */
+  left:100%;      /* 100% plus left column left padding */
 }
 .leftmenu .col2 {
   width:21%;      /* left column content width (column width minus left and right padding) */
-  left:6%;      /* (right column left and right padding) plus (left column left padding) */
+  left:2%;      /* (right column left and right padding) plus (left column left padding) */
 }
 
 .col1, .col2, .col3 {
@@ -209,6 +209,11 @@ body {
 #main .colleft {
   background-color: #333;
 }
+
+#main .colleft .sidebar {
+  border-color: #222;
+}
+
 
 
 /* 
