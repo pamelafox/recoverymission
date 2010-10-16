@@ -37,8 +37,7 @@ html { -webkit-font-smoothing: antialiased; }
 a:hover, a:active { outline: none; }
 a, a:active, a:visited { color:#607890; }
 a:hover { color:#036; }
-ul { margin-left:30px; }
-ol { margin-left:30px; list-style-type: decimal; }
+ol { list-style-type: decimal; }
 small { font-size:85%; }
 strong, th { font-weight: bold; }
 td, td img { vertical-align:top; } 
@@ -80,6 +79,11 @@ html, body {
   height: 100%;
 }
 
+p {
+  margin-bottom: 1.2em;
+  line-height: 1.3em;
+}
+
 #navigation {
   padding: 0.7em 0.2em 0.2em;
 }
@@ -101,8 +105,9 @@ html, body {
 }
 
 #container footer {
-  position: absolute;
-  bottom: 0;
+  clear: both;
+  float: left;
+  width: 100%;
 }
 
 .colmask {
