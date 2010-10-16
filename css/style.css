@@ -138,7 +138,7 @@ p {
 }
 .leftmenu .col2 {
   width:21%;      /* left column content width (column width minus left and right padding) */
-  left:2%;      /* (right column left and right padding) plus (left column left padding) */
+  left:1%;      /* (right column left and right padding) plus (left column left padding) */
 }
 
 .col1, .col2, .col3 {
