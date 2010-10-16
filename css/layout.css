@@ -1,3 +1,5 @@
+body { height: 100%; }
+
 .colmask {
   position:relative; /* This fixes the IE7 overflow hidden bug */
   clear:both;
