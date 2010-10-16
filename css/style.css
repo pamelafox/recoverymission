@@ -315,3 +315,8 @@ body > header h1 {
 
 }
 
+.centerbox {
+  background:#E5ECF9;
+  border: 1px solid black;
+  border-radius: 2px;
+}

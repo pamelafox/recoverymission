@@ -33,7 +33,7 @@
       <div class="col1"><h1>The game (you just lost it)</h1></div>
       <aside class="col2">
       <nav>
-        <a class="medium awesome blue" href="map.html">Fly<span class="assistive"> somewhere else</span></a>
+        <a class="medium awesome blue" href="#" onclick="showWorldMap(); return false;">Fly<span class="assistive"> somewhere else</span></a>
       </nav>
       </aside>
       </div>
@@ -41,15 +41,14 @@
     
     <div id="main" class="colmask leftmenu">
       <div class="colleft">
-        <section class="col1 content">
-          <div id="map" class="tab">
-            <a href="#">click meee</a>
+        <section id="alltabs" class="col1 content">
+          <div id="map" class="tab" style="display: none;">
           </div>
           
-          <div id="game" class="tab">
+          <div id="location" class="tab" style="display: none;">
           </div>
           
-          <div id="stuff" class="tab">
+          <div id="stuff" class="tab" style="display: none;">
           </div>
 
           <div class="clearfix">.</div>
@@ -75,18 +74,17 @@
 
   <!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script-->
   <script src="js/jquery-1.4.2.min.js"></script>
-  <script src="js/jquery-ui-1.8.5.custom.min.js"></script>
-  <script src="js/plugins.js?v=1"></script>
-  <script src="js/script.js?v=1"></script>
-  
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+  <script type="text/javascript" src="http://www.panoramio.com/wapi/wapi.js?v=1"></script>
+  <script type="text/javascript" src="js/countries.json"></script>
+  <script type="text/javascript" src="js/map.js"></script>
+  <script type="text/javascript" src="js/location.js"></script>
   <script type="text/javascript">
+  function showWorldMap() {
+    console.log('hello');
+    $('#tabs').children().hide();
+    mapview.showMap();
+  }
   </script>
-
-  <!--[if lt IE 7 ]>
-    <script src="js/dd_belatedpng.js?v=1"></script>
-  <![endif]-->
-
-  <script src="js/profiling/yahoo-profiling.min.js?v=1"></script>
-  <script src="js/profiling/config.js?v=1"></script>
 </body>
 </html>
