@@ -76,10 +76,62 @@ button {  width: auto; overflow: visible; }
     Author: 
  */
 
+html, body {
+  height: 100%;
+}
 
+#main {
+  position: relative;
+  min-width: 600px;
+  min-height: 100%;
+}
 
+#container footer {
+  position: absolute;
+  bottom: 0;
+}
 
+.colmask {
+  position:relative; /* This fixes the IE7 overflow hidden bug */
+  clear:both;
+  float:left;
+  width:100%; /* width of whole page */
+  min-height: 100%;
+  overflow:hidden; /* This chops off any overhanging divs */
+}
 
+/* common column settings */
+.colleft,
+.colright,
+.colmid {
+  float:left;
+  width:100%;
+  position:relative;
+}
+
+.leftmenu {
+    background:#fff;    /* right column background colour */
+}
+
+.leftmenu .colleft {
+  right:75%;      /* right column width */
+  background:#f4f4f4; /* left column background colour */
+}
+.leftmenu .col1 {
+  width:71%;      /* right column content width */
+  left:102%;      /* 100% plus left column left padding */
+}
+.leftmenu .col2 {
+  width:21%;      /* left column content width (column width minus left and right padding) */
+  left:6%;      /* (right column left and right padding) plus (left column left padding) */
+}
+
+.col1, .col2, .col3 {
+  float:left;
+  overflow:hidden;
+  padding:0 0 1em;
+  position:relative;
+}
 
 
 
