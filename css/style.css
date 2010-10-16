@@ -79,6 +79,9 @@ html, body {
   height: 100%;
 }
 
+h1 { font-size: 1.2em;}
+h2 { font-size: 1.1em;}
+
 p {
   margin-bottom: 1.2em;
   line-height: 1.3em;
@@ -86,6 +89,7 @@ p {
 
 #navigation {
   padding: 0.7em 0.2em 0.2em;
+  height: 3em;
 }
 
 #navigation .colleft {
@@ -94,6 +98,7 @@ p {
 
 #navigation h1 {
   text-align: center;
+  font-size: 1.4em;
 }
 
 #main {
