@@ -1,5 +1,5 @@
 (function() {
-    WIW.Games.initGame('crater', function(player, canvas, image) {
+    mgengine.initGame('crater', function(player, canvas, image) {
         // initialise the location count
         var LOCATION_COUNT = 4,
             THUMB_SIZE = 160,
@@ -16,7 +16,7 @@
             currentY = 0,
             displaySize = 100,
             lastLocation = 0,
-            self = new WIW.Games.Game(canvas);
+            self = new mgengine.Game(canvas);
             
         function handleTap(pos) {
             GT.Log.info("tapped at: " + pos.x + ", " + pos.y);

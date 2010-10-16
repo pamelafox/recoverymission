@@ -1,5 +1,5 @@
 (function() {
-    WIW.Games.initGame('easingblinds', function(player, canvas, image) {
+    mgengine.initGame('easingblinds', function(player, canvas, image) {
         var context = canvas.getContext('2d'),
             imageWidth = image.width,
             startWidth = 50;

@@ -5,8 +5,10 @@
   <link rel="stylesheet" href="css/minigames.css" />
   <script src="js/jquery-1.4.2.min.js"></script>
   <script src="js/tile5/tile5.lite.js"></script>
-  <script src="js/wiw-mini.js"></script>
-  <script src="js/init.js"></script>
+  <script src="js/mgengine.js"></script>
+  <script>
+  // $(document).ready(mgengine.run);
+  </script>
 </head>
 <body>
 	<div id="score">0</div>
@@ -14,6 +16,9 @@
 	<div class="choose-container">
 		<ul class="chooser"></ul>
 	</div>
-	<button onclick="game.startGame()">Start Game</button>
+	<div>
+		<button onclick="mgengine.run('falling')">Falling</button>
+		<button onclick="mgengine.run('crater')">Crater</button>
+	</div>
 </body>
 </html>

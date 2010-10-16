@@ -1,5 +1,5 @@
 (function() {
-    WIW.Games.initGame('falling', function(player, canvas, image) {
+    mgengine.initGame('falling', function(player, canvas, image) {
         // initialise some constants
         var THUMB_SIZE = 160;
         
@@ -63,7 +63,7 @@
         } // handleTap
         
         GT.Loopage.join({
-           frequency: 400,
+           frequency: 500,
            execute: addFaller 
         });
         
