@@ -320,3 +320,10 @@ body > header h1 {
   border: 1px solid black;
   border-radius: 2px;
 }
+
+#text { 
+			padding-left: 10px;
+			padding-top: 10px;
+			padding-right: 5px;
+			font-size: 18pt;
+		}

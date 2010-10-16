@@ -144,6 +144,7 @@ var mapview = function() {
       var $div = $('<div>');
       
       var url = 'http://ws.geonames.org/wikipediaSearchJSON?q=' + title + '&maxRows=1';
+      
       $.getJSON(url, function(data){
         var result = data.geonames[0];
         $div.html('<p><img width="100" height="75" src="' + result.thumbnailImg + '"></p>' + '<p>' + result.summary + '</p>' + '<p><a target="_blank" href="http://' + result.wikipediaUrl + '"> Read more</a>');
@@ -155,6 +156,15 @@ var mapview = function() {
         });
         $div.append(button);
       });
+      
+      var button = $('<button>');
+        button.html('Fly here!');
+        button.click(function() {
+          $('#map').hide();
+          addClue();
+          locationview.showLocation(title);
+        });
+      $div.append(button);
       
       centerbox.setContent($div[0]);
       centerbox.show();

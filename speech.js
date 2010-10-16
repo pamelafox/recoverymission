@@ -614,17 +614,15 @@ var speech = (function(R) {
 	},
 	characters = {"pirate": drawPirate,"ninja": drawNinja,"dude":drawDude},
 	init = function(container,name,scale) {
-		if(!paper) {
-		   	container = document.getElementById(container);
+		 container = document.getElementById(container);
 			paper = R(container,270,370);
 			var bubble = paper.set();
 			//bubble.push(paper.path("m14.1297,9.43392c-4.26346,0 -7.69576,3.16644 -7.69576,7.09453l0,64.69249c0,3.92808 3.4323,7.09453 7.69576,7.09453l4.56936,0c-1.69883,7.48762 -5.36035,14.70368 -8.89822,21.88482c9.09832,-6.26214 15.96081,-13.08277 21.88482,-21.88482l0.3605,0l89.82419,0c4.26346,0 7.69577,-3.16645 7.69577,-7.09453l0,-64.69249c0,-3.92809 -3.43231,-7.09453 -7.69577,-7.09453l-107.74065,0z").toBack().attr({"blur":"4",fill:"#000"}));
-			bubble.push(paper.path("m9.31985,1.18624c-4.26346,0 -7.69576,3.16645 -7.69576,7.09453l0,64.69249c0,3.92808 3.4323,7.09453 7.69576,7.09453l4.56936,0c-1.69883,7.48762 -5.36035,14.70369 -8.89822,21.88482c9.09832,-6.26214 15.96081,-13.08277 21.88482,-21.88482l0.3605,0l89.82396,0c4.26347,0 7.69576,-3.16645 7.69576,-7.09453l0,-64.69249c0,-3.92808 -3.4323,-7.09453 -7.69576,-7.09453l-107.74065,0l0.00023,0z"));
+			bubble.push(paper.path("m9.31985,1.18624c-4.26346,0 -7.69576,3.16645 -7.69576,7.09453l0,64.69249c0,3.92808 3.4323,7.09453 7.69576,7.09453l4.56936,0c-1.69883,7.48762 -5.36035,14.70369 -8.89822,21.88482c9.09832,-6.26214 15.96081,-13.08277 21.88482,-21.88482l0.3605,0l89.82396,0c4.26347,0 7.69576,-3.16645 7.69576,-7.09453l0,-64.69249c0,-3.92808 -3.4323,-7.09453 -7.69576,-7.09453l-107.74065,0l0.00023,0z").attr({fill:"#fff"}));
 			paper.canvas.style.position = "absolute";
 			// var bubble = paper.set();									
 			// 				bubble.push(paper.path("m21.479166,4.993683c-9.14342,0 -16.504374,6.37336 -16.504374,14.290049l0,85.591604c0,7.916695 7.360953,14.290047 16.504374,14.290047l52.333632,0l-7.064209,37.028664l40.454063,-37.028664l123.611084,0c9.143433,0 16.504379,-6.373352 16.504379,-14.290047l0,-85.591604c0,-7.916689 -7.360947,-14.290049 -16.504379,-14.290049l-209.33457,0z"));
 			// 				bubble.attr({rx: 100, ry: 100});
-		}
 		bubble.scale(scale,scale);
 		bubble.translate(boxWidth/scale,boxHeight/scale);
 		boxWidth = scale * boxWidth;
@@ -637,14 +635,14 @@ var speech = (function(R) {
 		var c,current = element.html();	
 		if(c = toType.pop()) {
 			setTimeout(function() {
-				if(loop == 4) {
+				if(loop == 2) {
 					$("#audiotag1")[0].play();
 					loop = 0;
 				}
 				loop++;
 				element.text(current + c);
 				type(toType,element);
-			}, 400);
+			}, 200);
 		}
 	}
 
@@ -655,6 +653,7 @@ var speech = (function(R) {
 			
 			var toType = text.split('').reverse(),
 			textContainer = $("<div id='text'></div>");
+      textContainer.css({'zIndex': '100', 'position': 'relative'});
 			$("#" +container).append(textContainer);
 			textContainer.height(boxHeight - 5);
 			textContainer.width(boxWidth - 15);

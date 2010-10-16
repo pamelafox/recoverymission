@@ -1,6 +1,11 @@
-var url = 'http://api.powerhousemuseum.com/api/v1/item/json/?api_key=24ef7a17f5816b4&width=200'
-  var url = 'http://api.powerhousemuseum.com/api/v1/multimedia/json/?api_key=24ef7a17f5816b4&flickr_id_isblank=1';
-  $.ajax({
+var targetItemUrl;
+var distractorItemUrls = [];
+var clues = [];
+var clueNum = 0;
+
+var url = 'http://api.powerhousemuseum.com/api/v1/multimedia/json/?api_key=24ef7a17f5816b4&flickr_id_isblank=1';
+
+$.ajax({
     url: url,
     dataType: 'jsonp',
     success: function(data){
@@ -24,8 +29,7 @@ var url = 'http://api.powerhousemuseum.com/api/v1/item/json/?api_key=24ef7a17f58
            targetItemUrl = items[itemUrl];
            var url = 'http://api.powerhousemuseum.com/' + itemUrl;
            $.ajax({url: url, dataType: 'jsonp', success: function(data){
-             // Make array of clues
-             var clues = [];
+             clues = [];
              var item = data.item;
              if (item.dimensions.width) {
                clues.push("Width: " + item.dimensions.width);
@@ -40,7 +44,6 @@ var url = 'http://api.powerhousemuseum.com/api/v1/item/json/?api_key=24ef7a17f58
              if (item.provenance.length > 0) {
                 clues.push('From: ' + item.provenance[0].place + ',' + item.provenance[0].date_latest);
              }
-             showClues(clues);
            }});
          } else if (itemNum < 11) {
            distractorItemUrls.push(items[itemUrl]);

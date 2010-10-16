@@ -3,15 +3,13 @@ var locationview = function() {
    
    var makeLocation = function(locationName) {
      
-      var $panodev = $('<div>')
-        .attr('id', 'location-pano')
-        .html('<a href="http://www.panoramio.com"> Panoramio - Photos of the World</a>');
-      $('#location').append($panodev);
+      $('#location-pano').html('<a href="http://www.panoramio.com"> Panoramio - Photos of the World</a>');
       
       var options = {
          'width': $('#location').width(),
          'height': $('#location').height()
       };
+      
       var request = {
          'tag': locationName
       };
@@ -19,6 +17,9 @@ var locationview = function() {
       widget.setPosition(0);
       widget.enableNextArrow(false);
       widget.enablePreviousArrow(false);
+      
+      $('#location-bubble').html('');
+      speech.say("pirate", "location-bubble" , 2, "He said 'Adios' and mentioned something about bulls!");
   };
   
   return {
