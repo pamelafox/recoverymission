@@ -192,20 +192,27 @@ article.dialog .multimedia {
 /*
  * colours
  */
+
+@font-face {
+    font-family: "Evil Genius";
+    src: url(evilgeniusbb_reg.ttf);
+}
+
 body {
-  background-color: #1D1E20;
-  background: -moz-linear-gradient(center bottom, #1D1E20, #222328) repeat scroll 0 0 #333;
-  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#1D1E20), to(#222328));
+  /* font-family: "Evil Genius"; */
+  background-color: #001333;
+  background: -moz-linear-gradient(center top, #001333, #0f2855) repeat scroll 0 0 #0f2855;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#001333), to(#0f2855));
 }
 
 .bar {
-  background-color: #333;
-  background: -moz-linear-gradient(center top, #444454, #223) repeat scroll 0 0 #333;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444454), to(#223));
-  border-top: 1px solid #666776;
+  background-color: #0052c8;
+  background: -moz-linear-gradient(center top, #0052c8, #003d95) repeat scroll 0 0 #0052c8;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0052c8), to(#003d95));
+  border-top: 1px solid #0069ff;
   border-bottom: 1px solid #000;
   color: white;
-  text-shadow: 0 1px 0 #000;
+  text-shadow: 0 1px 0 #003399;
 }
 
 .panel, .dialog {
@@ -246,7 +253,7 @@ body {
 }
 
 #main .colleft {
-  background-color: #333135;
+  background-color: #001e4c;
 }
 
 #main .colleft .sidebar {
