@@ -124,12 +124,10 @@ html, body {
 }
 
 .leftmenu {
-    background:#fff;    /* right column background colour */
 }
 
 .leftmenu .colleft {
   right:75%;      /* right column width */
-  background:#f4f4f4; /* left column background colour */
 }
 .leftmenu .col1 {
   width:71%;      /* right column content width */
