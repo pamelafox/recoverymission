@@ -261,8 +261,8 @@ body {
   background-color: #001e4c;
 }
 
-#main .colleft .sidebar {
-  border-color: #222;
+#main .colleft .content {
+  border-left: 1px solid #0069ff;
 }
 
 
