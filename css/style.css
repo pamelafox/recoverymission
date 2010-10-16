@@ -200,11 +200,11 @@ article.dialog .multimedia {
 
 @font-face {
     font-family: "Evil Genius";
-    src: url(evilgeniusbb_reg.ttf);
+    src: url(../evilgeniusbb_reg.ttf);
 }
 
 body {
-  /* font-family: "Evil Genius"; */
+  font-family: "Evil Genius";
   background-color: #001333;
   background: -moz-linear-gradient(center top, #001333, #0f2855) repeat scroll 0 0 #0f2855;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#001333), to(#0f2855));
