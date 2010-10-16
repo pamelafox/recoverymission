@@ -146,6 +146,16 @@ html, body {
 }
 
 
+.sidebar {
+  padding: 1em;
+  margin-top: 1em;
+  background-color: #CCC;
+  background: -moz-linear-gradient(center top , #FAFAFC, #EEE) repeat scroll 0 0 #333;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444454), to(#223));
+  border: 1px solid #AAA;
+  text-shadow: 0 1px 0 #CCC;
+}
+
 
 .assistive {
   position: absolute;
