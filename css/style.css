@@ -166,11 +166,11 @@ article.dialog .multimedia {
 
 .multimedia img {
   border: 1px solid #CCC;
-  padding: 1em 1em 3em;
+  padding: 0.7em 0.7em 2.4em;
   background-color: #FFF;
-  -moz-box-shadow: 0 3px 5px #00a0;
-  -webkit-box-shadow: 0 3px 5px #333;
-  box-shadow: 0 3px 5px #000;
+  -moz-box-shadow: 0 3px 5px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0 3px 5px rgba(0,0,0,0.25);
+  box-shadow: 0 3px 5px rgba(0,0,0,0.25);
 }
 
 .assistive {
