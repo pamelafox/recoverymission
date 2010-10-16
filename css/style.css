@@ -143,24 +143,20 @@ p {
 .sidebar article, 
 .sidebar aside {
   padding: 1em;
-  margin-top: 1em;
-}
-
-.sidebar aside {
-  
+  margin-bottom: 1em;
 }
 
 .sidebar ul li {
-  border-bottom: 1px dotted #CCC;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
   list-style-position: inside;
 }
 
-.sidebar ul li:first-of-type {
-  border-top-style: dotted;
-  border-top-width: 1px;
+.clues h1 {
+  font-weight: bold;
+  font-family: "Evil Genius Bold";
 }
+
 
 article.dialog {
   -webkit-border-radius: 5px;
@@ -215,6 +211,11 @@ article.dialog .multimedia {
     src: url(../evilgeniusbb_reg.ttf);
 }
 
+@font-face {
+    font-family: "Evil Genius Bold";
+    src: url(../evilgeniusbb_bld.ttf);
+}
+
 body {
   font-family: "Evil Genius";
   background-color: #001333;
@@ -245,7 +246,16 @@ body > header h1 {
   text-shadow: 0 1px 0 #CCC;
 }
 
-.clues {
+.clues.paper {
+  background: url("../images/note-paper.gif") 0 32% repeat scroll;
+  -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.35);
+  -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.35);
+  box-shadow: 0 3px 7px rgba(0,0,0,0.35);  
+  border: 2px solid rgba(0,0,0,0.25);
+  border-left-width: 8px;
+}
+
+.clues.inset {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
