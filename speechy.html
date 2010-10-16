@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+	<title>untitled.</title>
+	<style type="text/css" media="screen">
+		#text { 
+			padding-left: 10px;
+			padding-top: 10px;
+			padding-right: 5px;
+			font-size: 18pt;
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery-1.4.2.js"> </script>
+	<script src="http://github.com/DmitryBaranovskiy/raphael/raw/master/raphael-min.js">
+	</script>
+	<script src="font.js" type="text/javascript" charset="utf-8"></script>
+	<script src="speech.js"> </script>
+	
+	<script type="text/javascript">
+
+	window.onload = function () {
+		speech.say("pirate","holder",2,"Persue the jade monkey for the awesome");
+	}
+	</script>
+</head>
+
+<body>
+	<div id="holder"> 
+	</div>
+	<audio id="audiotag1" src="typewriter-2.mp3"  type="audio/mp3"> 
+</body>
+</html>
