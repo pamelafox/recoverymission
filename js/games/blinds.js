@@ -1,5 +1,5 @@
 (function() {
-    WIW.Games.initGame('blinds', function(player, canvas, image) {
+    mgengine.initGame('blinds', function(player, canvas, image) {
         var MAX_BLIND_WIDTH = 50;
         
         var context = canvas.getContext('2d'),
@@ -29,10 +29,6 @@
                 worker.trigger('complete');
             } // if
         } // reveal
-        
-        var self = jQuery.extend(new WIW.Games.Game(canvas), {
-            
-        });
         
         context.drawImage(image, 0, 0);
         

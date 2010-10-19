@@ -1,5 +1,5 @@
 (function() {
-    WIW.Games.initGame('eat', function(player, canvas, image) {
+    mgengine.initGame('eat', function(player, canvas, image) {
         var MAX_BLIND_WIDTH = 50;
         
         var context = canvas.getContext('2d'),
