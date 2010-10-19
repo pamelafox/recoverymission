@@ -161,7 +161,6 @@ var mapview = function() {
         button.html('Fly here!');
         button.click(function() {
           $('#map').hide();
-          addClue();
           locationview.showLocation(title);
         });
       $div.append(button);

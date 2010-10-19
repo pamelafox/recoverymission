@@ -19,7 +19,12 @@ var locationview = function() {
       widget.enablePreviousArrow(false);
       
       $('#location-bubble').html('');
-      speech.say("pirate", "location-bubble" , 2, "He said 'Adios' and mentioned something about bulls!");
+      window.setTimeout(function() {
+        if (locationName == 'Australia') {
+          speech.say("pirate", "location-bubble" , 2, "He said 'Adios' and mentioned something about bulls!");
+        }
+      }, 300);
+      addClue();
   };
   
   return {

@@ -23,14 +23,14 @@
 <!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
   <header>
-    <h1>Recovery Mission</h1>
+    <h1>Powerhouse Museum: Recovery Mission</h1>
   </header>
 
 
   <div id="container">
     <header id="navigation" class="colmask leftmenu bar">
       <div class="colleft">
-      <div class="col1"><h1>The game (you just lost it)</h1></div>
+      <div class="col1"></div>
       <aside class="col2">
       <nav>
         <a class="medium awesome blue" href="#" onclick="showWorldMap(); return false;">Fly<span class="assistive"> somewhere else</span></a>
@@ -67,8 +67,8 @@
       </div>
     </div>
     
-    <footer class="bar">
-      <p>These are the things you want to know.</p>
+    <footer class="bar" style="text-align:center">
+      <a class="medium awesome blue" href="#" onclick="showWorldMap(); return false;">Fly<span class="assistive"> somewhere else</span></a>
     </footer>
   </div> <!-- end of #container -->
 
@@ -90,7 +90,6 @@
     $('#location').hide();
     $('#game').hide();
     mapview.showMap();
-    addClue();
   }
   
   function addClue() {
@@ -100,6 +99,7 @@
     clueNum++;
   }
   
+  locationview.showLocation('Australia');
   </script>
 </body>
 </html>
